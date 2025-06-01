@@ -26,7 +26,7 @@ class _usersState extends State<users> {
           return Center(child: Text('Something went wrong!!'),);
         }
         if(!snapshot.hasData || snapshot.data!.docs.isEmpty){
- return Center(child: Text('No users insterted!!'),);
+ return Center(child: Text('No users insterts!'),);
         }
         List<users_model>userspeople=snapshot.data!.docs.map((doc){
           return users_model.fromJson(doc.data() as Map<String, dynamic>, doc.id);
